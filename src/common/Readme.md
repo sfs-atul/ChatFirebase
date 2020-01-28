@@ -1,0 +1,1 @@
+Contains files like : Constants, API, Global, commonStyle and etc.

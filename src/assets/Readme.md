@@ -1,0 +1,1 @@
+Contains images and other assets used in the app.
