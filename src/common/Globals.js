@@ -1,18 +1,14 @@
 // Live URL
-export const BASE_URL =     'http://18.220.95.159/api/';
+export const BASE_URL =     '';
 
 module.exports = {
     //* Live *//
     
-	REQUEST_URL:            'http://18.220.95.159/api/',
-	IMAGE_BASE:             'http://18.220.95.159/',
-    GOOGLE_MAP_API_KEY:     'AIzaSyDZTib3xD80Sf7q-Z_InWiJqqC_Ftoqfag',
+	REQUEST_URL:            '',
+	IMAGE_BASE:             '',
+    GOOGLE_MAP_API_KEY:     ',
 
-    //* DEV *//
-    
-	// REQUEST_URL:         'http://192.168.0.20:8000/api/',
-	//IMAGE_BASE:           'http://18.220.95.159/',
-	//GOOGLE_MAP_API_KEY:   'AIzaSyDYvalbW9BDXioYiRuxuQxhkDsHPcNY5iM',
+  
 
 	//* Auth *//
     EMAIL: '',
