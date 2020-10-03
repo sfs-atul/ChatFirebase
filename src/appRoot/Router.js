@@ -5,11 +5,10 @@ import PrintLog from '../common/PrintLog';
 
 export const createRootNavigator = (isLogin) => {
 
-    //PrintLog("isLogin >> ", isLogin);
     return createSwitchNavigator(
         {
             LoginRoot: { screen: LoginRoot() },
-            HomeRoot: { screen: MainRoot(isLogin) }
+            HomeRoot: { screen: MainRoot() }
         },
         {
             initialRouteName: (!isLogin) ? "LoginRoot" : "HomeRoot"
