@@ -18,7 +18,6 @@ const MainStackNavigator = createStackNavigator(
         headerMode: "none",
         defaultNavigationOptions: {
             header: null,
-           // gesturesEnabled: false,
         }
     }
 );
@@ -49,7 +48,6 @@ export default (MainRoot = () => {
             headerMode: "none",
             defaultNavigationOptions: {
                 header: null,
-                //gesturesEnabled: false,
             }
         }
     );
