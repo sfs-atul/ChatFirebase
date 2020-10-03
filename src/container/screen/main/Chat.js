@@ -48,14 +48,14 @@ export default class Chat extends Component {
     init = () => {
         if (!firebase.app.length) {
             firebase.initializeApp({
-                apiKey: "AIzaSyD_00558pMo6P9h9VDsbiVotNCUT2Pv9tc",
-                authDomain: "chat-e9b23.firebaseapp.com",
-                databaseURL: "https://chat-e9b23.firebaseio.com",
-                projectId: "chat-e9b23",
-                storageBucket: "chat-e9b23.appspot.com",
-                messagingSenderId: "85534229401",
-                appId: "1:85534229401:web:6fac334e3359d774a0c908",
-                measurementId: "G-X1CBK48L15"
+                apiKey: "xxx",
+                authDomain: "xxx-xxx.xxx.x",
+                databaseURL: "x://x-x.x.x",
+                projectId: "x-xxx",
+                storageBucket: "xxx-xxx.xxx.xxxx",
+                messagingSenderId: "xxx",
+                appId: "1:xxx:web:xxx",
+                measurementId: "G-xxx"
             });
         }
     }
@@ -147,13 +147,11 @@ export default class Chat extends Component {
 
     get = async(callback) => {
        await this.getRoomKey();
-        //this.db.on("child_added", snapshot => callback(this.parse(snapshot)));
         console.log('chatRoomKey==>',chatRoomKey)
          firebase.database().ref("messages/" + chatRoomKey).on("child_added", snapshot => callback(this.parse(snapshot)));
     };
 
     off() {
-        // this.db.off();
         firebase.database().ref("messages/" + chatRoomKey).off();
     }
 
@@ -167,7 +165,7 @@ export default class Chat extends Component {
     }
 
     get db() {
-        // return firebase.database().ref("messages/" + this.state.roomKey)
+       
     }
 
 }
